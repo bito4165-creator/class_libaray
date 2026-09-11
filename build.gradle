@@ -11,6 +11,16 @@ repositories {
 
 dependencies {
 
+    // 커넥션 풀 LIB
+    // Source: https://mvnrepository.com/artifact/com.zaxxer/HikariCP
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.1.0'
+
+    // 개발 하는 과정에서 로그를 확인하고 싶다면 로그 찍는 라이브러리 추가할 수 있음. -> slf4j
+    // Source: https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.17'
+    // ⭐ [추가] SLF4J 구현체 (Simple Logger)
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.17'
+
     // Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
     implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.4.0'
 
